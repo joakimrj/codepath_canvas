@@ -1,22 +1,22 @@
-# Lab 7 - *Name of App Here*
+# Lab 7 - Canvas
 
-**Name of your app** is an app that allows users to use gestures in order to create fun pictures using a variety of images.
+Canvas is an app that allows users to use gestures in order to create fun pictures using a variety of images.
 
-Time spent: **X** hours spent in total
+Time spent: 2 hours spent in total
 
 ## User Stories
 
 The following **required** user stories are complete:
 
-- [ ] Add and Configure View Elements (+1pt)
-- [ ] User can use a pan gesture to move the position of the tray (+1pt)
-- [ ] The tray will continue to the up or down position based on the direction the user was last panning (+1pt)
-- [ ] User can use a pan gesture to drag faces from the image tray to the canvas (+1pt)
-- [ ] User can pan faces on the canvas (+1pt)
+- [X] Add and Configure View Elements (+1pt)
+- [X] User can use a pan gesture to move the position of the tray (+1pt)
+- [X] The tray will continue to the up or down position based on the direction the user was last panning (+1pt)
+- [X] User can use a pan gesture to drag faces from the image tray to the canvas (+1pt)
+- [X] User can pan faces on the canvas (+1pt)
 
 The following **stretch** user stories are implemented:
 
-- [ ] Tray bounces when returning to it's up or down positions (+1pt)
+- [X] Tray bounces when returning to it's up or down positions (+1pt)
 - [ ] User sees as new face scale up and back down to simulate a "picking up and dropping" appearance (+1pt)
 - [ ] User can use a pinch gesture to scale faces up or down (+1pt)
 - [ ] User can use a rotation gesture to rotate the position of faces on the canvas (+1pt)
@@ -53,7 +53,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2018 Joakim Jorde
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
