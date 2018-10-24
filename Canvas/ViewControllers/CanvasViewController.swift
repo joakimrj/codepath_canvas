@@ -69,12 +69,13 @@ class CanvasViewController: UIViewController {
             let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(sender:)))
             newlyCreatedFace.addGestureRecognizer(panGesture)
             newlyCreatedFace.isUserInteractionEnabled = true
+            newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
 
         } else if sender.state == .changed {
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
 
         } else if sender.state == .ended {
-            
+            newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
         }
     }
     
@@ -83,12 +84,17 @@ class CanvasViewController: UIViewController {
         
         if sender.state == .began {
             newlyCreatedFace = (sender.view as! UIImageView) // to get the face that we panned on.
+               newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
             newlyCreatedFaceOriginalCenter = newlyCreatedFace.center // so we can offset by translation later.
+            
+         
             
         } else if sender.state == .changed {
             newlyCreatedFace.center = CGPoint(x: newlyCreatedFaceOriginalCenter.x + translation.x, y: newlyCreatedFaceOriginalCenter.y + translation.y)
             
         } else if sender.state == .ended {
+            
+            newlyCreatedFace.transform = CGAffineTransform(scaleX: 1.1, y: 1.1)
             
         }
     }
